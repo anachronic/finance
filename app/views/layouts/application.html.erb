@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <% if current_user %>
+      <div>
+          current user is <%= current_user.email %>
+      </div>
+      <div>
+        <%= link_to "salir", destroy_user_session_path(current_user), method: :delete %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
