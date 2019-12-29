@@ -1,5 +1,9 @@
+# Settings specified here will take precedence over those in config/application.rb.
+
 Rails.application.configure do
-  # Settings specified here will take precedence over those in config/application.rb.
+  # Devise: change me!!!!
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
 
   # Code is not reloaded between requests.
   config.cache_classes = true
