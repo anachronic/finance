@@ -5,7 +5,7 @@ class AccountsController < ApplicationController
   # GET /accounts
   # GET /accounts.json
   def index
-    @accounts = Account.where(user: current_user)
+    @accounts = current_user.accounts
   end
 
   # GET /accounts/1
